@@ -1,16 +1,26 @@
 import React from "react"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import "react-lazy-load-image-component/src/effects/blur.css"
 
 export default function Banner() {
   return (
-    <div
-      className="flex h-[549px] bg-green-50 font-avenir text-[#07638d] pt-40 px-44"
-      style={{
-        backgroundImage: `url("https://www.bridgewaystudyabroad.com/img/slider/Third_Slider_image_1920x1080.png")`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "stretch",
-      }}
-    >
-      <div className="w-[819px] text-[30px] ">
+    // pt-40 px-44
+    <div className="flex h-[549px] bg-[#07638d] font-avenir text-[#07638d]">
+      <LazyLoadImage
+        alt={"image.alt"}
+        effect="blur"
+        src={
+          "https://www.bridgewaystudyabroad.com/img/slider/Third_Slider_image_1920x1080.png"
+        }
+        style={{
+          height: "100%",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "stretch",
+        }}
+        width={"100%"}
+      />
+
+      <div className="w-[819px] text-[30px] absolute mt-40 mx-44">
         <p className="text-[71px] font-black leading-none font-avenirblack">
           Gotong Royong Bangun Masa Depan
         </p>
