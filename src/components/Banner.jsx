@@ -4,8 +4,7 @@ import "react-lazy-load-image-component/src/effects/blur.css"
 
 export default function Banner() {
   return (
-    // pt-40 px-44
-    <div className="flex h-[549px] bg-[#07638d] font-avenir text-[#07638d]">
+    <div className="flex bg-[#07638d] font-avenir text-[#07638d] h-[549px]">
       <LazyLoadImage
         alt={"image.alt"}
         effect="blur"
