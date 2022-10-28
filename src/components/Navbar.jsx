@@ -18,7 +18,12 @@ export default function Navbar() {
           </li>
         </ul>
         <div className="flex w-[678px] h-[70px]  border border-black rounded-[20px] pt-4 pb-5 px-4 ">
-          <AiOutlineSearch size={36} />
+          <button>
+            <AiOutlineSearch
+              className="focus:ring-0 transform active:scale-75 transition-transform outline-0"
+              size={36}
+            />
+          </button>
           <input
             className="w-full text-[24px] pl-4 pt-2.5 focus:outline-0"
             type="text"
@@ -31,10 +36,10 @@ export default function Navbar() {
         </div>
       </div>
       <div className="flex w-[185px] h-auto items-center justify-between">
-        <button className="w-[90px] h-[40px] border border-[#07638d] text-[#07638d] rounded-md">
+        <button className="w-[90px] h-[40px] border border-[#07638d] text-[#07638d] rounded-md focus:ring-0 shadow-lg transform active:scale-75 transition-transform outline-0">
           Daftar
         </button>
-        <button className="w-[90px] h-[40px] bg-[#07638d] text-white rounded-md">
+        <button className="w-[90px] h-[40px] bg-[#07638d] text-white rounded-md focus:ring-0 shadow-lg transform active:scale-75 transition-transform outline-0">
           Log in
         </button>
       </div>

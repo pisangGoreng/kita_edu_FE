@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #fff;
-}
-
 @font-face {
   font-family: "AVENIR-ROMAN";
   src: url("../public/fonts/AvenirLTStd-Roman.otf");
+}
+
+body {
+  background-color: #fff;
 }
