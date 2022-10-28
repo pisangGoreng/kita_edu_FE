@@ -5,7 +5,7 @@ import { AiOutlineSearch, AiFillCaretDown } from "react-icons/ai"
 export default function Navbar() {
   const [searchText, setSearchText] = useState(() => "")
   return (
-    <div className="flex justify-between pl-11 pr-9 items-center h-40  mx-auto   font-avenir text-[#423d2a]">
+    <div className="flex justify-between pl-11 pr-9 items-center h-40  mx-auto  font-avenir text-[#423d2a]">
       <img
         src={require("../assets/images/kasi_edu.png")}
         style={{ width: "300px" }}

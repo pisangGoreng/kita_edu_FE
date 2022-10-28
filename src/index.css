@@ -7,6 +7,11 @@
   src: url("../public/fonts/AvenirLTStd-Roman.otf");
 }
 
+@font-face {
+  font-family: "AVENIR-BLACK";
+  src: url("../public/fonts/AvenirLTStd-Black.otf");
+}
+
 body {
   background-color: #fff;
 }
