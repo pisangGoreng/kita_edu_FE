@@ -1,10 +1,12 @@
 import React from "react"
+import Typed from "react-typed"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
 
 export default function Banner() {
+  // flex bg-[#07638d] font-avenir text-[#07638d] h-[549px]
   return (
-    <div className="flex bg-[#07638d] font-avenir text-[#07638d] h-[549px]">
+    <div className="flex bg-[#07638d] font-avenir text-[#07638d] h-screen">
       <LazyLoadImage
         alt={"image.alt"}
         effect="blur"
@@ -19,14 +21,18 @@ export default function Banner() {
         width={"100%"}
       />
 
-      <div className="w-[819px] text-[30px] absolute mt-40 mx-44">
-        <p className="text-[71px] font-black leading-none font-avenirblack">
-          Gotong Royong Bangun Masa Depan
-        </p>
+      <div className="w-[819px] text-[30px] absolute mt-[420px] mx-44">
+        <Typed
+          className="text-[71px] font-black leading-none font-avenirblack"
+          strings={["Gotong Royong Bangun Masa Depan"]}
+          typeSpeed={80}
+        />
+
         <p className="mt-2">
           Bersama mencetak tenaga kerja Indonesia yang terampil dan berkualitas.
         </p>
-        <button className="bg-[#ffcd56] h-16 w-64 mt-6 px-4 rounded-md focus:ring-0 shadow-lg transform active:scale-75 transition-transform outline-0">
+
+        <button className="px-4 py-2 bg-[#ffcd56]  rounded-md focus:ring-0 shadow-lg transform active:scale-75 transition-transform outline-0">
           Daftar Sekarang
         </button>
       </div>

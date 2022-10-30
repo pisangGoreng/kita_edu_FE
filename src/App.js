@@ -1,5 +1,6 @@
 import React from "react"
 import Banner from "./components/Banner"
+import ClassRecomendation from "./components/ClassRecomendation"
 import Navbar from "./components/Navbar"
 import VocationsShowcase from "./components/VocationsShowcase"
 
@@ -8,8 +9,10 @@ function App() {
     <div>
       <Navbar />
       <Banner />
-      <div className="bg-red-300 px-[178px]">
+
+      <div className="">
         <VocationsShowcase />
+        <ClassRecomendation />
       </div>
     </div>
   )
