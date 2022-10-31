@@ -4,21 +4,17 @@ import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
 
 export default function Banner() {
-  // flex bg-[#07638d] font-avenir text-[#07638d] h-[549px]
   return (
     <div className="flex bg-[#07638d] font-avenir text-[#07638d] h-screen">
-      <LazyLoadImage
+      <img
+        src={require("../assets/images/banner-1.png")}
         alt={"image.alt"}
-        effect="blur"
-        src={
-          "https://www.bridgewaystudyabroad.com/img/slider/Third_Slider_image_1920x1080.png"
-        }
         style={{
+          width: "100%",
           height: "100%",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "stretch",
+          backgroundSize: "cover",
         }}
-        width={"100%"}
       />
 
       <div className="w-[819px] text-[30px] absolute mt-[420px] mx-44">

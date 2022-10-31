@@ -19,7 +19,7 @@ export default function Navbar() {
     <div className="flex justify-between pl-11 pr-9 items-center h-20 mx-auto font-avenir text-[#423d2a] fixed w-screen z-40 bg-white">
       {/* LOGO */}
       <img
-        src={require("../assets/images/kasi_edu.png")}
+        src={require("../assets/images/Logo-KasiEdu.png")}
         style={{ width: "200px" }}
       />
 
