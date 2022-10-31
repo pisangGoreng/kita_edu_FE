@@ -19,7 +19,7 @@ export default function StudentRecomendation() {
       />
 
       <p className="text-avenir text-[#07638d] font-medium text-[45px] pt-20 pb-8">
-        Pilihan Vokasi{" "}
+        Dukung Vokasi{" "}
         <span className="text-[#ffcd56] text-[30px] ml-2"> Lihat Semua </span>
       </p>
 
