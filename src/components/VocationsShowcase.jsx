@@ -65,10 +65,13 @@ export default function VocationsShowcase() {
       </p>
 
       <div className="flex pb-10 hide-scroll-bar">
-        <div class="flex justify-between w-full items-center">
-          {vocationsOne.map((vocation) => {
+        <div className="flex justify-between w-full items-center">
+          {vocationsOne.map((vocation, index) => {
             return (
-              <button className="w-36 h-36 p-1 rounded-md  hover:border border-[#07638d] transition ease-in duration-400 transform hover:-translate-y-5 active:translate-y-0 ">
+              <button
+                key={index}
+                className="w-36 h-36 p-1 rounded-md  hover:border border-[#07638d] transition ease-in duration-400 transform hover:-translate-y-5 active:translate-y-0 "
+              >
                 <LazyLoadImage
                   alt={"image.alt"}
                   effect="blur"
@@ -87,10 +90,13 @@ export default function VocationsShowcase() {
       </div>
 
       <div className="flex pb-10 hide-scroll-bar">
-        <div class="flex justify-between w-full items-center">
-          {vocationsTwo.map((vocation) => {
+        <div className="flex justify-between w-full items-center">
+          {vocationsTwo.map((vocation, index) => {
             return (
-              <button className="w-36 h-36 p-1 rounded-md  hover:border border-[#07638d] transition ease-in duration-400 transform hover:-translate-y-5 active:translate-y-0 ">
+              <button
+                key={index}
+                className="w-36 h-36 p-1 rounded-md  hover:border border-[#07638d] transition ease-in duration-400 transform hover:-translate-y-5 active:translate-y-0 "
+              >
                 <LazyLoadImage
                   alt={"image.alt"}
                   effect="blur"

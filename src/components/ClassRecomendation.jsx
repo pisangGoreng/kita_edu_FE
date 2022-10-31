@@ -49,9 +49,12 @@ export default function ClassRecomendation() {
         <span className="text-[#ffcd56] text-[30px] ml-2"> Lihat Semua </span>
       </p>
       <div className="flex overflow-x-auto items-center pb-6 mb-6">
-        {recomendations.map((recomendation) => {
+        {recomendations.map((recomendation, index) => {
           return (
-            <div className="flex-shrink-0  h-[230px] w-[200px] grid grid-rows-2 rounded-lg border border-gray-200 shadow-sm shadow-white hover:shadow mr-4">
+            <div
+              key={index}
+              className="flex-shrink-0  h-[230px] w-[200px] grid grid-rows-2 rounded-lg border border-gray-200 shadow-sm shadow-white hover:shadow mr-4"
+            >
               <LazyLoadImage
                 alt={"image.alt"}
                 effect="blur"
@@ -99,29 +102,29 @@ export default function ClassRecomendation() {
       <div className="flex pb-10 hide-scroll-bar items-center">
         <AiOutlineLeft size={30} color="#fff" className="mr-2" />
         <div className="flex overflow-x-auto  text-xl text-white items-center justify-center">
-          <button class="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
+          <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
             <AiFillTool size={30} color="#fff" />
             <p className="ml-1 text-md font-light text-[18px]">Mechanic</p>
           </button>
 
-          <button class="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
+          <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
             <AiFillTool size={30} color="#fff" />
             <p className="ml-1 text-md font-light text-[18px]">Barber</p>
           </button>
 
-          <button class="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
+          <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
             <AiFillTool size={30} color="#fff" />
             <p className="ml-1 text-md font-light text-[18px]">Culinery</p>
           </button>
 
-          <button class="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
+          <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
             <AiFillTool size={30} color="#fff" />
             <p className="ml-1 text-md font-light text-[18px]">
               Digital Marketing
             </p>
           </button>
 
-          <button class="flex rounded-xl border border-[#b7b7b7]  py-2 items-center justify-center mr-2 w-[283px]">
+          <button className="flex rounded-xl border border-[#b7b7b7]  py-2 items-center justify-center mr-2 w-[283px]">
             <AiFillTool size={30} color="#fff" />
             <p className="ml-1 text-md font-light text-[18px]">Coding</p>
           </button>

@@ -4,6 +4,8 @@ import ClassRecomendation from "./components/ClassRecomendation"
 import Navbar from "./components/Navbar"
 import VocationsShowcase from "./components/VocationsShowcase"
 import StudentRecomendation from "./components/StudentRecomendation"
+import PreTest from "./components/PreTest"
+import Partners from "./components/Partners"
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <VocationsShowcase />
         <ClassRecomendation />
         <StudentRecomendation />
+        <PreTest />
+        <Partners />
       </div>
     </div>
   )
