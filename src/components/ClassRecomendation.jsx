@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { AiOutlineLeft, AiOutlineRight, AiFillTool } from "react-icons/ai"
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
 
@@ -42,6 +42,30 @@ export default function ClassRecomendation() {
         "data:image/png;base64,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",
     },
   ])
+
+  const [categories, setCategories] = useState(() => [
+    {
+      name: "Mechanic",
+      imageUrl: require("../assets/images/class_categories/Mechanic-icon.png"),
+    },
+    {
+      name: "Barber",
+      imageUrl: require("../assets/images/class_categories/Barber-icon.png"),
+    },
+    {
+      name: "Culinery",
+      imageUrl: require("../assets/images/class_categories/Culinery-Icon.png"),
+    },
+    {
+      name: "Digital Marketing",
+      imageUrl: require("../assets/images/class_categories/Digital-Marketing-Icon.png"),
+    },
+    {
+      name: "Coding",
+      imageUrl: require("../assets/images/class_categories/Coding-Icon.png"),
+    },
+  ])
+
   return (
     <div className="py-28 bg-[#07638d] px-[178px] font-avenir text-[#07638d]">
       <p className="text-avenir text-white font-medium text-[45px] mb-8">
@@ -101,33 +125,27 @@ export default function ClassRecomendation() {
       </div>
       <div className="flex pb-10 hide-scroll-bar items-center">
         <AiOutlineLeft size={30} color="#fff" className="mr-2" />
+
         <div className="flex overflow-x-auto  text-xl text-white items-center justify-center">
-          <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
-            <AiFillTool size={30} color="#fff" />
-            <p className="ml-1 text-md font-light text-[18px]">Mechanic</p>
-          </button>
-
-          <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
-            <AiFillTool size={30} color="#fff" />
-            <p className="ml-1 text-md font-light text-[18px]">Barber</p>
-          </button>
-
-          <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
-            <AiFillTool size={30} color="#fff" />
-            <p className="ml-1 text-md font-light text-[18px]">Culinery</p>
-          </button>
-
-          <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
-            <AiFillTool size={30} color="#fff" />
-            <p className="ml-1 text-md font-light text-[18px]">
-              Digital Marketing
-            </p>
-          </button>
-
-          <button className="flex rounded-xl border border-[#b7b7b7]  py-2 items-center justify-center mr-2 w-[283px]">
-            <AiFillTool size={30} color="#fff" />
-            <p className="ml-1 text-md font-light text-[18px]">Coding</p>
-          </button>
+          {categories.map((category, index) => {
+            return (
+              <button className="flex rounded-xl border border-[#b7b7b7] py-2 items-center justify-center mr-2 w-[283px]">
+                <img
+                  src={category.imageUrl}
+                  alt={category.name}
+                  style={{
+                    width: "25px",
+                    height: "25px",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                  }}
+                />
+                <p className="ml-1 text-md font-light text-[18px] mt-1">
+                  {category.name}
+                </p>
+              </button>
+            )
+          })}
         </div>
         <AiOutlineRight size={30} color="#fff" className="ml-2" />
       </div>

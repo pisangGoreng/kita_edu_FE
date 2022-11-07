@@ -21,7 +21,7 @@ export default function VocationsShowcase() {
       imageUrl: require("../assets/images/vocations/Sekolah-Barber.png"),
     },
     {
-      imageUrl: require("../assets/images/vocations/Logo-vokasi.png"),
+      imageUrl: require("../assets/images/vocations/KADIN-Logo.png"),
     },
   ])
 
@@ -61,21 +61,9 @@ export default function VocationsShowcase() {
                 key={index}
                 className="flex-shrink-0 w-[150px] h-36 p-1 rounded-md "
               >
-                {/*  hover:border border-[#07638d] transition ease-in duration-400 transform hover:-translate-y-5 active:translate-y-0  */}
-                {/* <LazyLoadImage
-                  alt={"image.alt"}
-                  effect="blur"
-                  src={vocation.imageUrl}
-                  style={{
-                    height: "100%",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "stretch",
-                  }}
-                  width={"100%"}
-                /> */}
                 <img
                   src={vocation.imageUrl}
-                  alt={"image.alt"}
+                  alt={index}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -99,7 +87,7 @@ export default function VocationsShowcase() {
               >
                 <img
                   src={vocation.imageUrl}
-                  alt={"image.alt"}
+                  alt={index}
                   style={{
                     width: "100%",
                     height: "100%",
