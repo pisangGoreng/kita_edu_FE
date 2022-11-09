@@ -1,26 +1,14 @@
 import React from "react"
-import Banner from "./components/Banner"
-import ClassRecomendation from "./components/ClassRecomendation"
-import Navbar from "./components/Navbar"
-import VocationsShowcase from "./components/VocationsShowcase"
-import StudentRecomendation from "./components/StudentRecomendation"
-import PreTest from "./components/PreTest"
-import Partners from "./components/Partners"
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import Login from "./pages/Login"
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Banner />
-
-      <div className="">
-        <VocationsShowcase />
-        <ClassRecomendation />
-        <StudentRecomendation />
-        <PreTest />
-        <Partners />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   )
 }
 
