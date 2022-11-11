@@ -6,6 +6,7 @@ import VocationsShowcase from "../components/VocationsShowcase"
 import StudentRecomendation from "../components/StudentRecomendation"
 import PreTest from "../components/PreTest"
 import Partners from "../components/Partners"
+import Footer from "../components/sections/Footer"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <StudentRecomendation />
         <PreTest />
         <Partners />
+        <Footer />
       </div>
     </div>
   )

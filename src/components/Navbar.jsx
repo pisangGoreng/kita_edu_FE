@@ -6,6 +6,7 @@ import {
   AiOutlineClose,
   AiOutlineMenu,
 } from "react-icons/ai"
+import Button from "./elements/Button"
 
 export default function Navbar() {
   const [searchText, setSearchText] = useState(() => "")
@@ -53,12 +54,12 @@ export default function Navbar() {
       </div>
 
       <div className="hidden w-40 h-auto items-center justify-between md:flex">
-        <button className="px-4 py-2 border border-[#07638d] text-[#07638d] rounded-md focus:ring-0 shadow-lg transform active:scale-75 transition-transform outline-0">
-          Daftar
-        </button>
-        <button className="px-4 py-2 bg-[#07638d] text-white rounded-md focus:ring-0 shadow-lg transform active:scale-75 transition-transform outline-0">
-          Log in
-        </button>
+        <Button title="Daftar" />
+        <Button
+          title="Log in"
+          titleColor="text-white"
+          backgroundColor="bg-blue-ocean"
+        />
       </div>
 
       {/* TODO: buat component sidebar sendiri menggunakan redux state */}

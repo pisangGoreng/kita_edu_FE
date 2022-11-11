@@ -8,7 +8,7 @@ export default function Partners() {
         <span className="text-[#ffcd56] text-[30px] ml-2"> Lihat Semua </span>
       </p>
 
-      <div className="w-full h-[1200px]"></div>
+      <div className="w-full h-[400px]"></div>
     </div>
   )
 }
