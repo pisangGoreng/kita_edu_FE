@@ -22,7 +22,7 @@ export default function Home() {
         bannerImage={homeBanner}
       />
 
-      <div className="">
+      <div>
         <VocationsShowcase />
         <ClassRecomendation />
         <StudentRecomendation />
